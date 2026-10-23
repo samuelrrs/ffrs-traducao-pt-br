@@ -6,6 +6,13 @@ Patch de texto para o `en/Game.locres` do `ffrs-ps5.pak`. O menu em inglês pass
 
 Tradução: thesamzito (YouTube) e Juli Nos (YouTube).
 
+## Screenshots
+
+![Título](screenshots/01-titulo.jpg)
+![Opções](screenshots/02-opcoes.jpg)
+![Diálogo](screenshots/03-dialogo.jpg)
+![Batalha](screenshots/04-batalha.jpg)
+
 ## Requisitos
 
 - Python 3 no PATH
