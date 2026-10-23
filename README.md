@@ -14,10 +14,10 @@ Tradução: thesamzito (YouTube) e Juli Nos (YouTube).
 ## Requisitos
 
 - **Python 3 instalado no PC.** Baixe em https://www.python.org/downloads/ e, na instalação, deixe marcada a opção **Add python.exe to PATH**. É só instalar; não precisa configurar mais nada.
-- Dump `PPSA31544-app0` (o mesmo da PS5, com `ffrs\content\paks\ffrs-ps5.pak` e `ampr_emu.index`)
+- Dump `PPSA31544-app0` (o mesmo do PS5, com `ffrs\content\paks\ffrs-ps5.pak` e `ampr_emu.index`)
 
 
-## Uso
+## Como instalar
 
 1. Mantenha os três arquivos juntos: `en-Game.locres.bin`, `aplicar_traducao.py`, `aplicar_traducao.bat`
 2. Arraste a pasta do jogo (`PPSA31544-app0`) em cima do `aplicar_traducao.bat`
