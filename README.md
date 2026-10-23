@@ -20,8 +20,8 @@ Tradução: thesamzito (YouTube) e Juli Nos (YouTube).
 ## Uso
 
 1. Mantenha os três arquivos juntos: `en-Game.locres.bin`, `aplicar_traducao.py`, `aplicar_traducao.bat`
-2. Dê dois cliques em `aplicar_traducao.bat` e cole o caminho da pasta `PPSA31544-app0`
-3. Ou no cmd:
+2. Arraste a pasta do jogo (`PPSA31544-app0`) em cima do `aplicar_traducao.bat`
+3. Se o arrastar não pegar (caminho com `[ ]` ou espaços), dê dois cliques no `.bat` e cole o caminho da pasta, ou no cmd:
 
 ```bat
 aplicar_traducao.bat "D:\caminho\PPSA31544-app0"
