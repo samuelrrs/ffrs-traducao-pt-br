@@ -29,14 +29,15 @@ if %errorlevel%==0 (
   if %errorlevel%==0 (
     py -3 "%~dp0aplicar_traducao.py" "%ALVO%"
   ) else (
-    echo Python 3 nao encontrado no PATH.
+    echo Python 3 nao encontrado.
+    echo Instale o Python no PC (python.org) e marque "Add python.exe to PATH".
     goto fim
   )
 )
 
 if errorlevel 1 (
   echo.
-  echo Falhou. Precisa de Python 3 e da pasta PPSA31544-app0.
+  echo Falhou. Instale o Python no PC e use a pasta PPSA31544-app0.
 ) else (
   echo.
   echo Pronto.

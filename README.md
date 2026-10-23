@@ -13,7 +13,7 @@ Tradução: thesamzito (YouTube) e Juli Nos (YouTube).
 
 ## Requisitos
 
-- Python 3 no PATH
+- **Python 3 instalado no PC.** Baixe em https://www.python.org/downloads/ e, na instalação, deixe marcada a opção **Add python.exe to PATH**. É só instalar; não precisa configurar mais nada.
 - Dump `PPSA31544-app0` (o mesmo da PS5, com `ffrs\content\paks\ffrs-ps5.pak` e `ampr_emu.index`)
 
 
