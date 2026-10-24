@@ -195,8 +195,51 @@ def resolve_app0(path):
         cur = parent
     raise SystemExit("nao achei PPSA31544-app0 em: " + path)
 
+def pause():
+    if os.environ.get("FFRS_FROM_BAT"):
+        return
+    try:
+        input("\nPressione Enter para sair...")
+    except EOFError:
+        pass
+
+def pick_app0():
+    if len(sys.argv) >= 2 and sys.argv[1].strip():
+        return sys.argv[1]
+    try:
+        import tkinter as tk
+        from tkinter import filedialog
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes("-topmost", True)
+        path = filedialog.askdirectory(title="Selecione a pasta PPSA31544-app0 do jogo")
+        root.destroy()
+        return path
+    except Exception:
+        print("Cole o caminho da pasta PPSA31544-app0 do jogo.")
+        try:
+            return input("Pasta app0: ").strip().strip('"')
+        except EOFError:
+            return ""
+
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Uso: aplicar_traducao.py CAMINHO\\PPSA31544-app0")
-        sys.exit(1)
-    apply(resolve_app0(sys.argv[1]))
+    code = 0
+    try:
+        path = pick_app0()
+        if not path:
+            print("Nenhuma pasta informada.")
+            code = 1
+        else:
+            apply(resolve_app0(path))
+    except SystemExit as e:
+        if e.code not in (0, None):
+            if isinstance(e.code, int):
+                code = e.code
+            else:
+                print(e.code)
+                code = 1
+    except Exception as e:
+        print("ERRO:", e)
+        code = 1
+    pause()
+    sys.exit(code)

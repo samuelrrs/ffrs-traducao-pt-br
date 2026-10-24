@@ -19,9 +19,13 @@ Tradução: thesamzito (YouTube) e Juli Nos (YouTube).
 
 ## Como instalar
 
-1. Mantenha os três arquivos juntos: `en-Game.locres.bin`, `aplicar_traducao.py`, `aplicar_traducao.bat`
-2. Arraste a pasta do jogo (`PPSA31544-app0`) em cima do `aplicar_traducao.bat`
-3. Se o arrastar não pegar (caminho com `[ ]` ou espaços), dê dois cliques no `.bat` e cole o caminho da pasta, ou no cmd:
+Mantenha juntos: `en-Game.locres.bin`, `aplicar_traducao.py`, `aplicar_traducao.bat` (e o `.vbs`, se vier no zip).
+
+Jeito mais simples: dê dois cliques em `aplicar_traducao.py` (ou no `.vbs`) e escolha a pasta `PPSA31544-app0`.
+
+Também pode arrastar a pasta do jogo em cima do `aplicar_traducao.bat` ou do `.vbs`. A janela fica aberta no final — se fechar sozinha, use o `.py` / `.vbs`.
+
+Se preferir colar o caminho:
 
 ```bat
 aplicar_traducao.bat "D:\caminho\PPSA31544-app0"
